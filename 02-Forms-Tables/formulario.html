@@ -4,12 +4,21 @@
     <title>Ejercicio 02 - Formularios en HTML</title>
   </head>
   <body>
-    <form>
-      Nombre de usuario
-      <input />
-      Contraseña
-      <input />
-      <button>Enviar</button>
+    <form action="/">
+      <div>
+        <label for="nombre">nombre</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="edad">edad</label>
+        <input type="number" />
+      </div>
+      <div>
+        <label for="frase-favorita">frase-favorita</label>
+        <textarea name="frase-favorita"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
