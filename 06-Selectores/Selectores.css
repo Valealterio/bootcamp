@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton {
+  height: 25px;
+  width: 150px;
+  border: 1px;
+  border-radius: 10px;
+}
+.boton::before {
+  content: "Pasa por encima";
+}
+.boton:hover {
+  color: white;
+  background-color: green;
+}
+.boton:hover::before {
+  content: "¡Hecho!";
+}
