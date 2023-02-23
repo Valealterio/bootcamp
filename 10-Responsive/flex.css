@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: 2rem;
+}
+.principal {
+  background-color: cadetblue;
+  flex-grow: 1;
+}
+
+.secundario {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: aliceblue;
+}
+
+@media (max-width: 640px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  .secundario {
+    flex-direction: row;
+  }
+}
